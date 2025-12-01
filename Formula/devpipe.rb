@@ -5,21 +5,21 @@
 class Devpipe < Formula
   desc "Fast, local pipeline runner for development workflows"
   homepage "https://github.com/drewkhoury/devpipe"
-  version "0.0.3"
+  version "0.0.4"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/drewkhoury/devpipe/releases/download/v0.0.3/devpipe_0.0.3_darwin_amd64.tar.gz"
-      sha256 "6adc8a7578d7fc5d2e87e1807569b0a6f1e3f34b56b9c294da64632e59b2d140"
+      url "https://github.com/drewkhoury/devpipe/releases/download/v0.0.4/devpipe_0.0.4_darwin_amd64.tar.gz"
+      sha256 "407cff7bc164ed0173d52f00185397b63aa218ab09f6dd1bf4d73bce690c627b"
 
       def install
         bin.install "devpipe"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/drewkhoury/devpipe/releases/download/v0.0.3/devpipe_0.0.3_darwin_arm64.tar.gz"
-      sha256 "00505caf9adeee491e661a1ced2dc7897e9117b966570dda5c62965dfecc395e"
+      url "https://github.com/drewkhoury/devpipe/releases/download/v0.0.4/devpipe_0.0.4_darwin_arm64.tar.gz"
+      sha256 "417116cfaa1b920e70a5b91c2beb9c467d296368f2abfa347413a883ee8069c8"
 
       def install
         bin.install "devpipe"
@@ -29,15 +29,15 @@ class Devpipe < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/drewkhoury/devpipe/releases/download/v0.0.3/devpipe_0.0.3_linux_amd64.tar.gz"
-      sha256 "290db36b2ba54360e597b41c7df9c7faaa99e3ca8e3f3f8e8e30afe3d84b6ee5"
+      url "https://github.com/drewkhoury/devpipe/releases/download/v0.0.4/devpipe_0.0.4_linux_amd64.tar.gz"
+      sha256 "66cba4607e1f785a8f152e5e34190e144999a0d8b2599e213215646d0275f22d"
       def install
         bin.install "devpipe"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/drewkhoury/devpipe/releases/download/v0.0.3/devpipe_0.0.3_linux_arm64.tar.gz"
-      sha256 "ce138e853e9866d0de3204b0abd2f73f385f272c3497f5eefaecf764d2ca3dd4"
+      url "https://github.com/drewkhoury/devpipe/releases/download/v0.0.4/devpipe_0.0.4_linux_arm64.tar.gz"
+      sha256 "53425589112742340b6e5526a3a2fef899d8c958bbbd4243d724ff3ca10ac720"
       def install
         bin.install "devpipe"
       end
